@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Grid</title>
+    <link rel="stylesheet" href="output.css">
+</head>
+<body class="p-4">
+
+    <!-- TOP GRID -->
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+
+        <!-- Big Image -->
+        <div class="bg-[url('./images/bg1.webp')] bg-cover bg-center 
+                    aspect-[4/3] md:col-span-2 flex items-center justify-center text-white">
+            asd
+        </div>
+
+        <!-- Second Image -->
+        <div class="bg-[url('./images/bg2.webp')] bg-cover bg-center 
+                    aspect-[4/3] flex items-center justify-center text-white">
+            asd
+        </div>
+
+        <!-- Two Small Images -->
+        <div class="grid grid-cols-2 md:grid-cols-1 gap-4">
+            <div class="bg-[url('./images/bg3.jpg')] bg-cover bg-center aspect-square"></div>
+            <div class="bg-[url('./images/bg4.webp')] bg-cover bg-center aspect-square"></div>
+        </div>
+
+    </div>
+
+    <!-- SECOND GRID -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-10 px-4">
+        <div class="aspect-square bg-orange-500 flex items-center justify-center">1</div>
+        <div class="aspect-square bg-orange-500 flex items-center justify-center">2</div>
+        <div class="aspect-square bg-orange-500 flex items-center justify-center">3</div>
+        <div class="aspect-square bg-orange-500 flex items-center justify-center">4</div>
+    </div>
+
+    <!-- RESPONSIVE TEXT -->
+    <div class="mt-10 text-center text-2xl text-red-500
+                sm:text-purple-800
+                md:text-green-500
+                lg:text-pink-900
+                xl:text-violet-800
+                2xl:text-blue-800">
+        Hello world
+    </div>
+
+</body>
+</html>
